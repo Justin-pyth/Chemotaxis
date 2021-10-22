@@ -36,10 +36,9 @@ void draw(){
   for (int x = -15; x < 800; x+=30){
     triangle(x,800,x+15,775,x+30,800);
   }
-  for (int i = 0; i < a.length; i++){
-    a[i].show();
-    a[i].move((float)(Math.random()*10-5),(float)(Math.random()*5));
-    System.out.println(a[i].myY);
+  for (int l = 0; l < a.length; l++){
+    a[l].show();
+    a[l].move((float)(Math.random()*10-5),(float)(Math.random()*5));
   }
 }
 
