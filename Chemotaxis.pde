@@ -15,6 +15,7 @@ void setup(){
 }
 
 void draw(){
+  noStroke();
   background(135,206,235);
   for(Sunflower sun : s){
     sun.show(even);
@@ -92,7 +93,6 @@ class Pollen{
    myY-=movY;
  }
   void show(){
-    noStroke();
     fill(myColor);
     ellipse(myX,myY,10,10);
   }
